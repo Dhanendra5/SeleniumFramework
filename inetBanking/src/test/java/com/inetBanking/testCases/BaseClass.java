@@ -26,7 +26,7 @@ public class BaseClass {
 		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		//logger class
-		Logger logger = Logger.getLogger("ebanking");
+		logger = Logger.getLogger("ebanking");
 		PropertyConfigurator.configure("log4j.properties");
 		
 	}
@@ -35,7 +35,7 @@ public class BaseClass {
 	@AfterClass
 	public void tearDown()
 	{
-		//driver.quit();
+		driver.quit();
 	}
 
 }
