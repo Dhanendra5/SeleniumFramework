@@ -32,10 +32,10 @@ public class BaseClass {
 	}
 	
 	//after class method will execute after test methods
-	//@AfterClass
-	//public void tearDown()
-	//{
+	@AfterClass
+	public void tearDown()
+	{
 		//driver.quit();
-	//}
+	}
 
 }
