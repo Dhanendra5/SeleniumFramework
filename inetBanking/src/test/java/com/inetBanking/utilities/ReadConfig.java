@@ -42,6 +42,31 @@ public class ReadConfig {
     String username = pro.getProperty("username");
     return username;    	
     }
+    
+    //getting password
+    
+   public String getPassword(){
+	  String password = pro.getProperty("password");
+	  return password;
+   }
+   
+   //getting chromepath
+   public String getChromepath(){
+	   String chromepath = pro.getProperty("chromepath");
+	   return chromepath;
+   }
+   
+   //getting iepath
+   public String getIEpath(){
+	   String IEpath = pro.getProperty("iepath");
+	   return IEpath;
+	   
+   }
+   
+   public String getMozillaPath(){
+	   String Mozillapath = pro.getProperty("firefoxpath");
+	   return Mozillapath;
+   }
 	
 	
 
