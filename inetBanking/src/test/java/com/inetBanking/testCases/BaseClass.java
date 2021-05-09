@@ -7,13 +7,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.inetBanking.utilities.ReadConfig;
+
 
 public class BaseClass {
 	
+	//creating object of read config to access all methods in read config java
+	ReadConfig readconfig = new ReadConfig();
 	//common variables that every test cases use
-	public String baseURL = "http://demo.guru99.com/V4/";
-	public String username = "mngr324911";
-	public String password = "ubegAqA";
+	public String baseURL = readconfig.getApplicationURL();
+	public String username = readconfig.getUserName();
+	public String password = readconfig.getPassword();
 	public static WebDriver driver;	
 	public static Logger logger;
 	
@@ -23,7 +27,7 @@ public class BaseClass {
 	@BeforeClass
 	public void setup(){
 		
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
 		driver = new ChromeDriver();
 		//logger class
 		logger = Logger.getLogger("ebanking");

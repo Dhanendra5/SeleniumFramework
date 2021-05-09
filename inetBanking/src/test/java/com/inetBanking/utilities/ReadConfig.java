@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
+//this is utility class used to read property file and pass parameters to base class
 public class ReadConfig {
 	
     Properties pro;
@@ -62,7 +63,7 @@ public class ReadConfig {
 	   return IEpath;
 	   
    }
-   
+  //getting IE path 
    public String getMozillaPath(){
 	   String Mozillapath = pro.getProperty("firefoxpath");
 	   return Mozillapath;
