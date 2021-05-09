@@ -4,8 +4,11 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import com.inetBanking.utilities.ReadConfig;
 
@@ -24,14 +27,33 @@ public class BaseClass {
 	//if suppose we extends this class to another class 
 	//this before class method will execute first and later test methods
 	
+	//changing before class to launch any browser  for tests vross browser testing
+	//set up method will take this browser parameter as br
+	@Parameters("browser")
 	@BeforeClass
-	public void setup(){
+	public void setup(String br){
 		
-		System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
-		driver = new ChromeDriver();
 		//logger class
 		logger = Logger.getLogger("ebanking");
 		PropertyConfigurator.configure("log4j.properties");
+		
+		if (br.equals("chrome"))
+		{
+		System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
+		driver = new ChromeDriver();
+		}
+		else if(br.equals("firefox")){
+		System.setProperty("webdriver.gecko.driver", readconfig.getMozillaPath());
+		driver = new FirefoxDriver();    
+		}
+		else if(br.equals("ie")){
+		System.setProperty("webdriver.ie.driver",readconfig.getIEpath());
+		driver = new InternetExplorerDriver();
+		}
+		
+		
+	
+	
 		
 	}
 	

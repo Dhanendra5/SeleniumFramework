@@ -15,3 +15,8 @@
 2021-05-09 11:52:55,693 - ebanking -INFO - Entered password
 2021-05-09 11:52:57,861 - ebanking -INFO - clicked on button
 2021-05-09 11:52:57,954 - ebanking -INFO - Test passed
+2021-05-09 13:20:31,657 - ebanking -INFO - url is opened
+2021-05-09 13:20:33,195 - ebanking -INFO - entered username
+2021-05-09 13:20:33,325 - ebanking -INFO - Entered password
+2021-05-09 13:20:35,251 - ebanking -INFO - clicked on button
+2021-05-09 13:20:35,310 - ebanking -INFO - Test passed
