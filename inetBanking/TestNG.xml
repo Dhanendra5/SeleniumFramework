@@ -3,6 +3,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name = "inetBanking">
+
+	<listeners>
+	<listener class-name = 'com.inetBanking.utilities.Reporting'/>
+	</listeners>
+	
+	
    <test name = "Banking App test">	
    <parameter name = "browser" value = "chrome" />
 	<classes>
