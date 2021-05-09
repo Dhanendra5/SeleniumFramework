@@ -4,11 +4,9 @@
 
 <suite name = "inetBanking">
    <test name = "Banking App test">	
-   <parameter name = "browser" value = "chrome">
+   <parameter name = "browser" value = "chrome" />
 	<classes>
-	  <class name = "com.inetBanking.testCases.TC_LoginTest_001">
-	       </class>
-	     </classes>
-	 </parameter>
+	  <class name = "com.inetBanking.testCases.TC_LoginTest_001"/>
+	</classes>   
 	</test>
 </suite>
