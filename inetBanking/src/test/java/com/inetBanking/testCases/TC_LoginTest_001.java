@@ -2,6 +2,13 @@ package com.inetBanking.testCases;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,7 +21,7 @@ public class TC_LoginTest_001  extends BaseClass{
 	
 	
 	@Test
-	public void loginTest(){
+	public void loginTest() throws IOException{
 	
 		driver.get(baseURL);
 		logger.info("url is opened");		
@@ -29,17 +36,20 @@ public class TC_LoginTest_001  extends BaseClass{
 		logger.info("clicked on button");
 		
 		
-		if(driver.getTitle().equals("Guru99 Bank Manager HomePage")){
+		if(driver.getTitle().equals("Guru99 Bank Manager HomePage54321")){
 			
 			Assert.assertTrue(true);
 			logger.info("Test passed");
 		}
 		else{
 			
+			capturescreen(driver , "loginTest");
 			Assert.assertTrue(false);
 			logger.info("Test failed");
 		
 	}
+		
+	
 	
 	}
 
