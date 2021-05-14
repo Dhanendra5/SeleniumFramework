@@ -95,6 +95,20 @@ public class AddCustomerPage {
 		txtMobile.sendKeys(cmobNum);	
 	}
 	
+	public void customeremail(String Cemail){
+		txtEmail.sendKeys(Cemail);
+	}
+	
+	public void CustPassword(String cpass){
+		
+		txtPassword.sendKeys(cpass);
+		
+	}
+	
+	public void custSubmit(){
+		btnSubmit.click();
+	}
+	
 
 
 }
