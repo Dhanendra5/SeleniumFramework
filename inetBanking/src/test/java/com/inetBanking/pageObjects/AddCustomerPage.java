@@ -64,6 +64,10 @@ public class AddCustomerPage {
 	@CacheLookup
 	WebElement btnSubmit;
 	
+	@FindBy(how = How.NAME, using = "city")
+	@CacheLookup
+	WebElement custCity;
+	
 	//Action methods
 	public void clickAddNewCustomer(){
 		lnkAddCustomer.click();
@@ -73,6 +77,11 @@ public class AddCustomerPage {
 	public void custName(String cname){
 		txtcustomername.sendKeys(cname);
 		
+	}
+	
+	public void custGender(String gender){
+		
+		rdGender.sendKeys(gender);
 	}
 	
 	public void custDOB(String mm , String dd , String yy){
@@ -107,6 +116,14 @@ public class AddCustomerPage {
 	
 	public void custSubmit(){
 		btnSubmit.click();
+	}
+	
+	public void custCity(String custcity){
+		custCity.sendKeys(custcity);
+	}
+	
+	public void custSatate(String custState){
+		custCity.sendKeys(custState);
 	}
 	
 
