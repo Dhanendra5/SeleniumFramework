@@ -9,10 +9,11 @@
 	</listeners>
 	
 	
-   <test name = "Banking App test">	
-   <parameter name = "browser" value = "chrome" />
+    <test name = "Banking App test">	
+    <parameter name = "browser" value = "chrome" />
 	<classes>
 	  <class name = "com.inetBanking.testCases.TC_LoginTest_001"/>
+	  <class name = "com.inetBanking.testCases.TC_LoginDDT_002"/>
 	</classes>   
 	</test>
 </suite>
