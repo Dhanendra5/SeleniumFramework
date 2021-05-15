@@ -85,3 +85,26 @@
 2021-05-14 12:45:52,661 [main] INFO ebanking - Entered password
 2021-05-14 12:45:54,379 [main] INFO ebanking - clicked on button
 2021-05-14 12:45:54,473 [main] INFO ebanking - Test passed
+2021-05-14 20:08:02,281 [main] INFO ebanking - url is opened
+2021-05-14 20:08:04,387 [main] INFO ebanking - entered username
+2021-05-14 20:08:04,543 [main] INFO ebanking - Entered password
+2021-05-14 20:08:06,868 [main] INFO ebanking - clicked on button
+2021-05-14 20:08:06,951 [main] INFO ebanking - Test passed
+2021-05-14 20:12:25,256 [main] INFO ebanking - url is opened
+2021-05-14 20:12:25,629 [main] INFO ebanking - entered username
+2021-05-14 20:12:25,785 [main] INFO ebanking - Entered password
+2021-05-14 20:12:28,754 [main] INFO ebanking - clicked on button
+2021-05-14 20:12:28,770 [main] INFO ebanking - Test passed
+2021-05-15 11:36:37,917 [main] INFO ebanking - url is opened
+2021-05-15 11:36:38,533 [main] INFO ebanking - entered username
+2021-05-15 11:36:38,674 [main] INFO ebanking - Entered password
+2021-05-15 11:36:40,429 [main] INFO ebanking - clicked on button
+2021-05-15 11:36:40,535 [main] INFO ebanking - Test passed
+2021-05-15 11:37:33,085 [main] INFO ebanking - entered username
+2021-05-15 11:37:33,223 [main] INFO ebanking - Entered password
+2021-05-15 11:37:35,483 [main] INFO ebanking - clicked on button
+2021-05-15 11:37:41,939 [main] INFO ebanking - Entered all details in page
+2021-05-15 11:42:29,796 [main] INFO ebanking - entered username
+2021-05-15 11:42:29,927 [main] INFO ebanking - Entered password
+2021-05-15 11:42:31,699 [main] INFO ebanking - clicked on button
+2021-05-15 11:42:37,121 [main] INFO ebanking - Entered all details in page

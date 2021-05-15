@@ -47,7 +47,7 @@ public class ReadConfig {
     //getting password
     
    public String getPassword(){
-	  String password = pro.getProperty("password");
+	  String password = pro.getProperty("sitepassword");
 	  return password;
    }
    

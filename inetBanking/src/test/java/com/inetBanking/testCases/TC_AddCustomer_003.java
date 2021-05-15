@@ -1,5 +1,11 @@
 package com.inetBanking.testCases;
 
+import static org.testng.Assert.assertTrue;
+
+import java.io.IOException;
+
+import org.apache.commons.lang.RandomStringUtils;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.inetBanking.pageObjects.AddCustomerPage;
@@ -9,12 +15,16 @@ public class TC_AddCustomer_003 extends BaseClass {
 	
 	//single method is required here
 	@Test
-	public void addNewcustomer() throws InterruptedException{
+	public void addNewcustomer() throws InterruptedException, IOException{
 	//driver object comes from baseclass	
-	LoginPage lp = new LoginPage(driver);
-	lp.setUserName(username);
-	lp.setPassword(password);
-	lp.clickbutton();
+		LoginPage login = new LoginPage(driver);
+		login.setUserName(username);
+		logger.info("entered username");
+		login.setPassword(password);
+		logger.info("Entered password");
+		login.clickbutton();
+		logger.info("clicked on button");
+	
 	
 	Thread.sleep(3000);
 	
@@ -29,11 +39,31 @@ public class TC_AddCustomer_003 extends BaseClass {
 	addcust.custSatate("Andhra Pradesh");
 	addcust.customerpincode(123456);
 	addcust.CustPassword("Welcome@123");
-	addcust.customeremail("vundupuramdhanendra@gmail.com");
 	addcust.customermobilenumber("9948514343");
+	String email = randomString()+"@gmail.com";
+	addcust.customeremail(email);
+	addcust.custSubmit();
+	logger.info("Entered all details in page");
 	
+	Thread.sleep(3000);
 	
+	boolean res = driver.getPageSource().contains("Customer Registered Successfully");
+	
+	if(res==true){
 		
+		Assert.assertTrue(true);
+		logger.info("test case is passed");
 	}
+	else{
+		
+		capturescreen(driver, "addNewCustomer");
+		Assert.assertTrue(false);
+		logger.info("test case failed");
+	}
+	
+	}
+	
+	//for creating random email id's
+	
 
 }
