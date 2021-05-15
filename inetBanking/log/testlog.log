@@ -108,3 +108,18 @@
 2021-05-15 11:42:29,927 - ebanking -INFO - Entered password
 2021-05-15 11:42:31,699 - ebanking -INFO - clicked on button
 2021-05-15 11:42:37,121 - ebanking -INFO - Entered all details in page
+2021-05-15 11:48:27,675 - ebanking -INFO - entered username
+2021-05-15 11:48:27,825 - ebanking -INFO - Entered password
+2021-05-15 11:48:29,346 - ebanking -INFO - clicked on button
+2021-05-15 11:48:35,933 - ebanking -INFO - Entered all details in page
+2021-05-15 11:48:39,069 - ebanking -INFO - test case is passed
+2021-05-15 11:57:13,927 - ebanking -INFO - url is opened
+2021-05-15 11:57:14,391 - ebanking -INFO - entered username
+2021-05-15 11:57:14,511 - ebanking -INFO - Entered password
+2021-05-15 11:57:16,121 - ebanking -INFO - clicked on button
+2021-05-15 11:57:16,171 - ebanking -INFO - Test passed
+2021-05-15 11:57:30,316 - ebanking -INFO - entered username
+2021-05-15 11:57:30,431 - ebanking -INFO - Entered password
+2021-05-15 11:57:32,292 - ebanking -INFO - clicked on button
+2021-05-15 11:57:39,952 - ebanking -INFO - Entered all details in page
+2021-05-15 11:57:43,018 - ebanking -INFO - test case is passed

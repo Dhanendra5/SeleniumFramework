@@ -68,6 +68,13 @@ public class AddCustomerPage {
 	@CacheLookup
 	WebElement custCity;
 	
+	@FindBy(how = How.NAME, using = "state")
+	@CacheLookup
+	WebElement custState;
+	
+	
+	
+	
 	//Action methods
 	public void clickAddNewCustomer(){
 		lnkAddCustomer.click();
@@ -122,8 +129,8 @@ public class AddCustomerPage {
 		custCity.sendKeys(custcity);
 	}
 	
-	public void custSatate(String custState){
-		custCity.sendKeys(custState);
+	public void custSatate(String custstate){
+		custState.sendKeys(custstate);
 	}
 	
 
