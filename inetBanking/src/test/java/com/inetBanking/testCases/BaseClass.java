@@ -69,7 +69,7 @@ public class BaseClass {
 	}
 	
 	//after class method will execute after test methods
-	@AfterClass
+	@AfterClass(enabled = false)
 	public void tearDown()
 	{
 		driver.quit();

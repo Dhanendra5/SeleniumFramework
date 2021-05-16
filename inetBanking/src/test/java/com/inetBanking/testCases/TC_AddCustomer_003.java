@@ -5,15 +5,20 @@ import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 
 import org.apache.commons.lang.RandomStringUtils;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.inetBanking.pageObjects.AddCustomerPage;
 import com.inetBanking.pageObjects.LoginPage;
 
+import freemarker.log.Logger;
+
 public class TC_AddCustomer_003 extends BaseClass {
 	
 	//single method is required here
+	
+	public String custID;
 	@Test
 	public void addNewcustomer() throws InterruptedException, IOException{
 	//driver object comes from baseclass	
@@ -42,8 +47,14 @@ public class TC_AddCustomer_003 extends BaseClass {
 	addcust.customermobilenumber("9948514343");
 	String email = randomString()+"@gmail.com";
 	addcust.customeremail(email);
-	addcust.custSubmit();
 	logger.info("Entered all details in page");
+	addcust.custSubmit();
+	logger.info("customer got created");	
+	String custID = driver.findElement(By.xpath("(//tr//td)[6]")).getText();
+	logger.info("custID is printed");
+	System.out.println("customre ID is " + custID);
+	
+	
 	
 	Thread.sleep(3000);
 	

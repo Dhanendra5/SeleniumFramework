@@ -74,7 +74,6 @@ public class AddCustomerPage {
 	
 	
 	
-	
 	//Action methods
 	public void clickAddNewCustomer(){
 		lnkAddCustomer.click();
@@ -132,6 +131,8 @@ public class AddCustomerPage {
 	public void custSatate(String custstate){
 		custState.sendKeys(custstate);
 	}
+	
+	
 	
 
 
