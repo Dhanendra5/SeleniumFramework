@@ -3,12 +3,22 @@ package com.inetBanking.testCases;
 import org.testng.annotations.Test;
 
 import com.inetBanking.pageObjects.EditCustomer;
+import com.inetBanking.pageObjects.LoginPage;
 
 public class TC_EditCustomer_004 extends BaseClass{
 	
-	@Test(priority=1)
-	public void editNewCustomer(){
+	@Test
+	public void editNewCustomer() throws InterruptedException{
 		
+		LoginPage login = new LoginPage(driver);
+		login.setUserName(username);
+		logger.info("entered username");
+		login.setPassword(password);
+		logger.info("Entered password");
+		login.clickbutton();
+		logger.info("clicked on button");
+	    Thread.sleep(3000);
+	    
 		EditCustomer editCust = new EditCustomer(driver);
 		editCust.clickEditcustomer();
 		logger.info("clicked on edit customer");

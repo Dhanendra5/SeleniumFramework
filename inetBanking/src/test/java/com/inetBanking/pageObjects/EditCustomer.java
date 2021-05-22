@@ -20,7 +20,7 @@ WebDriver ldriver;
 	}
 
 	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'New Customer')]")
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Edit Customer')]")
 	@CacheLookup
 	WebElement custEdit;
 	

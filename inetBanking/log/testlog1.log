@@ -192,3 +192,43 @@
 2021-05-16 20:47:26,609 [main] INFO ebanking - customer got created
 2021-05-16 20:47:26,677 [main] INFO ebanking - custID is printed
 2021-05-16 20:47:29,720 [main] INFO ebanking - test case is passed
+2021-05-16 22:59:16,452 [main] INFO ebanking - entered username
+2021-05-16 22:59:17,329 [main] INFO ebanking - Entered password
+2021-05-16 22:59:19,382 [main] INFO ebanking - clicked on button
+2021-05-16 22:59:25,473 [main] INFO ebanking - Entered all details in page
+2021-05-16 22:59:26,808 [main] INFO ebanking - customer got created
+2021-05-16 22:59:26,866 [main] INFO ebanking - custID is printed
+2021-05-16 22:59:29,915 [main] INFO ebanking - test case is passed
+2021-05-16 23:06:41,846 [main] INFO ebanking - entered username
+2021-05-16 23:06:42,209 [main] INFO ebanking - Entered password
+2021-05-16 23:06:44,296 [main] INFO ebanking - clicked on button
+2021-05-16 23:06:49,390 [main] INFO ebanking - Entered all details in page
+2021-05-16 23:06:50,535 [main] INFO ebanking - customer got created
+2021-05-16 23:06:50,597 [main] INFO ebanking - custID is printed
+2021-05-16 23:06:53,661 [main] INFO ebanking - test case is passed
+2021-05-16 23:07:11,451 [main] INFO ebanking - entered username
+2021-05-16 23:07:11,583 [main] INFO ebanking - Entered password
+2021-05-16 23:07:13,434 [main] INFO ebanking - clicked on button
+2021-05-16 23:07:17,279 [main] INFO ebanking - clicked on edit customer
+2021-05-16 23:09:32,095 [main] INFO ebanking - entered username
+2021-05-16 23:09:32,232 [main] INFO ebanking - Entered password
+2021-05-16 23:09:33,690 [main] INFO ebanking - clicked on button
+2021-05-16 23:09:38,714 [main] INFO ebanking - Entered all details in page
+2021-05-16 23:09:40,374 [main] INFO ebanking - customer got created
+2021-05-16 23:09:40,426 [main] INFO ebanking - custID is printed
+2021-05-16 23:09:43,480 [main] INFO ebanking - test case is passed
+2021-05-16 23:09:55,802 [main] INFO ebanking - entered username
+2021-05-16 23:09:55,932 [main] INFO ebanking - Entered password
+2021-05-16 23:09:57,954 [main] INFO ebanking - clicked on button
+2021-05-16 23:10:02,121 [main] INFO ebanking - clicked on edit customer
+2021-05-22 19:23:36,034 [main] INFO ebanking - entered username
+2021-05-22 19:23:36,274 [main] INFO ebanking - Entered password
+2021-05-22 19:23:38,427 [main] INFO ebanking - clicked on button
+2021-05-22 19:23:43,663 [main] INFO ebanking - Entered all details in page
+2021-05-22 19:23:44,925 [main] INFO ebanking - customer got created
+2021-05-22 19:23:44,985 [main] INFO ebanking - custID is printed
+2021-05-22 19:23:48,076 [main] INFO ebanking - test case is passed
+2021-05-22 19:24:09,555 [main] INFO ebanking - entered username
+2021-05-22 19:24:09,693 [main] INFO ebanking - Entered password
+2021-05-22 19:24:11,368 [main] INFO ebanking - clicked on button
+2021-05-22 19:24:15,468 [main] INFO ebanking - clicked on edit customer
